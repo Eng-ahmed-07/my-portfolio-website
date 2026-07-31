@@ -1,0 +1,148 @@
+.skills {
+    background-color: var(--black);
+    position: relative;
+    padding: 100px 0 130px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+.skills-header h3 {
+    font-weight: 300;
+}
+
+.skills-header .header-underline {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background: radial-gradient(circle at center, var(--neon-green-soft), transparent 100%);
+}
+
+.skills-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.skills-container .skills-frontend,
+.skills-container .skills-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+/* ===== Splide wrapper ===== */
+.skills-container .splide {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.skills-container .splide__track {
+    overflow: hidden;
+    padding: 60px 0;
+    margin: -60px 0;
+}
+
+.skills-container .splide__list {
+    display: flex;
+    align-items: center;
+}
+
+.skills-container .splide__slide {
+    width: auto;
+    margin-right: 20px;
+}
+
+.skills-container .splide__slide {
+    position: relative;
+    width: 180px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+    border: var(--border-color) 1px solid;
+    border-radius: 10px;
+    background-color: var(--dark-bg);
+    transition: all 0.3s ease;
+}
+
+.skills-container .splide__slide::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    box-shadow: 0 0 70px 50px var(--neon-green-dark);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.skills-container .splide__slide i {
+    font-size: 70px;
+    color: #838383;
+}
+
+.skills-container .splide__slide svg {
+    width: 70px;
+    height: 70px;
+}
+
+.skills-container .splide__slide .rq-path1 {
+    fill: #ffffff;
+}
+
+.skills-container .splide__slide .rq-path2 {
+    fill: #8f8f8f;
+}
+
+.skills-container .splide__slide .rq-path3 {
+    fill: #000000;
+}
+
+.skills-container .splide__slide .rq-path4,
+.skills-container .splide__slide .axios,
+.skills-container .splide__slide .vs-code,
+.skills-container .splide__slide .postman,
+.skills-container .splide__slide .ai {
+    fill: #aaaaaa;
+}
+
+.skills-container .splide__slide:hover::before,
+.skills-container .splide__slide:hover,
+.skills-container .splide__slide:hover i {
+    opacity: 1;
+    border-color: var(--neon-green-dark);
+    color: var(--neon-green);
+}
+
+.skills-container .splide__slide:hover {
+    transform: translateY(-10px);
+}
+
+.skills-container .splide__slide:hover .rq-path2,
+.skills-container .splide__slide:hover .axios,
+.skills-container .splide__slide:hover .vs-code,
+.skills-container .splide__slide:hover .postman,
+.skills-container .splide__slide:hover .ai {
+    fill: var(--neon-green);
+}
+
+.skills-container .splide__slide:hover .rq-path4 {
+    fill: var(--cyan-soft);
+}

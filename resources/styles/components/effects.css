@@ -1,0 +1,12 @@
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--neon-green), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}

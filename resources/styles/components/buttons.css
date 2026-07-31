@@ -1,0 +1,37 @@
+.hero-btns{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 18px;     
+    transition: 0.3s ease;
+}
+
+.btn-filled {
+    background-color: var(--neon-green);
+    color: var(--black);
+}
+
+.btn-filled:hover {
+    box-shadow: 0 0 35px var(--neon-green-soft);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--neon-green);
+    color: var(--neon-green);
+}
+
+.btn-outline:hover {
+    background-color: var(--neon-green-dark);
+}
+

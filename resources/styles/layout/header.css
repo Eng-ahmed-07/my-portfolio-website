@@ -1,0 +1,31 @@
+.header-page {
+    width: 30%;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    border-radius: 30px;
+    z-index: 10;
+}
+
+.header-page ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.header-page a {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header-page a:hover,
+.header-page a.active {
+    color: var(--neon-green);
+}
+

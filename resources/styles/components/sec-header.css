@@ -1,0 +1,35 @@
+.sec-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-header h4 {
+    color: var(--neon-green);
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+}
+
+.sec-header h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.sec-header .header-underline {
+    display: block;
+    width: 5.5rem;
+    height: 4px;
+    background: linear-gradient(135deg, var(--neon-green), var(--cyan));
+    margin: -0.75rem auto 2rem auto;
+}
+
+.sec-header p {
+    max-width: 700px;
+    font-size: 1rem;
+    color: var(--text-gray);
+}

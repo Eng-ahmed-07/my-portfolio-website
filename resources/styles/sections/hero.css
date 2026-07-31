@@ -1,0 +1,90 @@
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    animation: fadeInScale 3s ease-out;
+}
+
+
+/* status */
+.work-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--dark-bg), #1d1d1d94);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.status-indicator {
+    width: 15px;
+    height: 15px;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+}
+
+.status-dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--status-green);
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+
+/* text */
+.box-text {
+    text-align: center;
+}
+
+.box-text h1 {
+    font-size: 88px;
+    font-weight: 400;
+}
+
+.box-text h2 {
+    font-size: 50px;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.box-text p {
+    font-size: 20px;
+    color: var(--text-gray);
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+/* glow */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    z-index: -1;
+    box-shadow: 200px 200px 600px 120px var(--neon-green-soft);
+    animation: rotate-glow-before 30s linear infinite;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 300px;
+    right: 350px;
+    z-index: -1;
+    box-shadow: 200px 200px 600px 150px var(--cyan-soft);
+
+    animation: rotate-glow-after 30s linear infinite;
+}

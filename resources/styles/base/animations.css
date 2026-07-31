@@ -1,0 +1,71 @@
+@keyframes loadingAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-180%);
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate-glow-after {
+    0% {
+        transform: scale(1.5) rotate(0deg);
+        bottom: 300px;
+        right: 350px;
+    }
+
+    50% {
+        transform: scale(2) rotate(180deg);
+        bottom: 400px;
+        right: 350px;
+    }
+
+    100% {
+        transform: scale(1.5) rotate(360deg);
+        bottom: 300px;
+        right: 350px;
+    }
+}
+
+@keyframes rotate-glow-before {
+    0% {
+        transform: scale(2) rotate(0deg);
+        top: 400px;
+        left: 200px;
+    }
+
+    50% {
+        transform: scale(1.5) rotate(-180deg);
+        top: 400px;
+        left: 450px;
+    }
+
+    100% {
+        transform: scale(2) rotate(-360deg);
+        top: 400px;
+        left: 200px;
+    }
+}

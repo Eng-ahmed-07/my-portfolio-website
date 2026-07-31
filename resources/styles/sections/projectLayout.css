@@ -1,0 +1,186 @@
+.project-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.project-layout-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.layout-text h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.layout-text p {
+    font-size: 1.17rem;
+    font-weight: 400;
+    color: var(--text-gray);
+    line-height: 2.2rem;
+}
+
+.layout-text ul {
+    line-height: 3rem;
+    margin: 1rem;
+    color: var(--text-gray);
+    font-size: 1.17rem;
+}
+
+.layout-text li::marker {
+    color: var(--neon-green);
+}
+
+.project-lighthouse{
+    width: 100%;
+}
+
+.project-lighthouse .lighthouse-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lighthouse-grid .score-card {
+    width: 24%;
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 2px var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 5rem 0;
+}
+
+.lighthouse-grid .score-card h3{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: var(--neon-green);
+}
+
+.lighthouse-grid .score-card p{
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* *********************************************************************************** */
+
+.project-sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+
+.project-technologies {
+    width: 100%;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: solid 2px var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-technologies h2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.project-technologies hr {
+    border: solid 1px var(--border-color);
+}
+
+ul.project-layout-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    list-style: none;
+}
+
+.project-layout-tags .tag span {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+}
+
+.project-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-card {
+    width: 48%;
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: solid 2px var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.info-card span {
+    color: var(--neon-green);
+    font-size: 1.8rem;
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--text-gray);
+}
+
+.info-card p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.project-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-actions a {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+}
+
+
+.project-actions a .icon {
+    font-size: 1.5rem;
+}
+
+.project-actions a.btn-filled {
+    border: solid 2px var(--neon-green);
+}
+
+.project-actions a.btn-filled:hover {
+    box-shadow: 0 0 15px var(--neon-green-soft);
+}

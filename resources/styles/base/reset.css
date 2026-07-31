@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::selection {
+    background: var(--neon-green);
+    color: var(--dark-bg);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

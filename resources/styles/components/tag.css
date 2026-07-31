@@ -1,0 +1,7 @@
+.tag span {
+    background-color: #1f1f1f;
+    border-radius: .75rem;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: var(--neon-green);
+}
