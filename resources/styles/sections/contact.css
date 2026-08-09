@@ -35,11 +35,9 @@
     width: 140px;
     height: 1px;
 
-    background: radial-gradient(
-        circle at center,
-        var(--neon-green),
-        transparent 80%
-    );
+    background: radial-gradient(circle at center,
+            var(--neon-green),
+            transparent 80%);
 }
 
 .box-contact {
@@ -47,7 +45,7 @@
     gap: 20px;
 }
 
-.box-contact > li {
+.box-contact>li {
     flex: 1;
     list-style: none;
 }
@@ -192,16 +190,26 @@
     }
 
     ul.box-contact {
+        overflow: hidden;
         flex-direction: column;
         gap: 15px;
     }
 
     .contact-option {
-        min-height: 180px;
+        display: flex;
+        min-height: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-option.media a {
+        gap: 8px;
     }
 
     .contact-option.media {
-        min-height: 120px;
+        min-height: 100px;
+        padding: 20px 0;
+        gap: 10px;
     }
 
     .contact-option a i {
@@ -218,5 +226,15 @@
 
     .contact-header .header-underline {
         width: 120px;
+    }
+
+    .contact-option:hover {
+        transform: translateY(0px);
+
+        border-color: var(--neon-green);
+
+        box-shadow:
+            0 0 25px var(--neon-green-dark),
+            0 15px 35px #00000060;
     }
 }

@@ -25,7 +25,7 @@
     background: linear-gradient(135deg, var(--dark-bg), #1d1d1d94);
     padding: 10px 20px;
     border-radius: 20px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color); 
 }
 
 .status-indicator {
@@ -88,3 +88,63 @@
 
     animation: rotate-glow-after 30s linear infinite;
 }
+
+
+@media (max-width: 576px) {
+
+    .hero{
+        width: 100%;
+        overflow: hidden;
+        padding: 0 20px;
+    }
+
+    .hero::before {
+        top: 300px;
+        left: 100px;
+        box-shadow: 150px 150px 400px 80px var(--neon-green-soft);
+    }
+
+    .hero::after {
+        bottom: 200px;
+        right: 150px;
+        box-shadow: 150px 150px 400px 100px var(--cyan-soft);
+    }
+
+    .hero-container {
+        gap: 10px;
+    }
+
+    .work-status {
+        padding: 5px 10px;
+    }
+
+    .status-indicator,
+    .status-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .box-text h1 {
+        font-size: 50px;
+    }
+
+    .box-text h2 {
+        font-size: 24px;
+    }
+
+    .box-text p {
+        font-size: 16px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-btns .btn{
+        padding: 14px 100px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+

@@ -19,6 +19,7 @@
 .btn-filled {
     background-color: var(--neon-green);
     color: var(--black);
+    border: 2px solid var(--neon-green);
 }
 
 .btn-filled:hover {

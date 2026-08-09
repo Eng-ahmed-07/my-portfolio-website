@@ -29,3 +29,14 @@
     color: var(--neon-green);
 }
 
+
+@media (max-width: 576px) {
+    .header-page{
+        display: none;
+    }
+
+    .menu span{
+        display: block;
+        position: fixed;
+    }
+}

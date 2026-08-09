@@ -155,3 +155,29 @@ ul.project-tags {
     list-style: none;
     margin: .8rem 0;
 }
+
+
+@media (max-width: 576px) {
+
+    .portfolio-container {
+        width: 100%;
+        gap: 20px;
+        overflow: hidden;
+        padding: 25px 0;
+    }
+
+    .project {
+        width: 90%;
+        height: 250px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}

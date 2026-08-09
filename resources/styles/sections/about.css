@@ -140,3 +140,56 @@
     border-radius: 50%;
     box-shadow: 0 0 350px 120px var(--cyan-soft);
 } */
+
+
+@media (max-width: 576px) {
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-image-box {
+        width: 100%;
+        height: 25rem;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-stats {
+        gap: 10px;
+    }
+
+    .stat-card {
+        width: 120px;
+        height: 130px;
+    }
+
+    .stat-card .icon span {
+        font-size: 1.8rem;
+    }
+
+    .stat-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .stat-card p {
+        font-size: 0.8rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-btn button {
+
+        width: 100%;
+    }
+
+}

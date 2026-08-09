@@ -7,7 +7,8 @@
 }
 
 .services-container {
-    margin-top: 80px;
+    padding: 15px 0;
+    margin-top: 50px;
     position: relative;
     max-width: 1200px;
     display: flex;
@@ -63,4 +64,40 @@
     border-radius: 50%;
     border: 2px solid var(--black);
     background-color: var(--neon-green-soft);
+}
+
+
+@media (max-width: 576px) {
+    .services-container {
+        width: 100%;
+        gap: 40px;
+        overflow: hidden;
+    }
+
+    .service {
+        width: 94%;
+        flex-direction: column;
+    }
+
+    .service.left, .service.right {
+        align-self: flex-start;
+        padding-left: 9%;
+    }
+
+    .content h3 {
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: .9rem;
+        padding-left: 0;
+    }
+
+    .line {
+        left: 5%;
+    }
+
+    .dot {
+        left: 5.5%;
+    }
 }

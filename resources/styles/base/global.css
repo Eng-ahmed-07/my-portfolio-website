@@ -4,6 +4,7 @@ body {
     font-family: "Noto Sans Tangsa", sans-serif;
     margin: 0 auto;
     min-height: 100vh;
+    position: relative;
 }
 
 ::-webkit-scrollbar {
