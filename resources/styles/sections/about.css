@@ -7,7 +7,7 @@
 
 .about-container {
     max-width: 1200px;
-    margin: 60px auto 0 auto;
+    /* margin: 60px auto 0 auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +146,9 @@
     .about-container {
         flex-direction: column;
         gap: 30px;
-        padding: 0 20px;
+        overflow: hidden;
+        margin-top: -5rem;
+        padding: 8rem 1rem;
     }
 
     .about-img {
