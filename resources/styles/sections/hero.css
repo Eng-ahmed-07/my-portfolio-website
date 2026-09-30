@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-
+    overflow: hidden;
     animation: fadeInScale 3s ease-out;
 }
 

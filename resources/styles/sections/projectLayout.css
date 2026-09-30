@@ -184,3 +184,53 @@ ul.project-layout-tags {
 .project-actions a.btn-filled:hover {
     box-shadow: 0 0 15px var(--neon-green-soft);
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+    .project-layout {
+        width: 95%;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 8rem;
+    }
+
+    .project-layout-content {
+        width: 100%;
+    }
+
+    .project-sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .project-lighthouse .lighthouse-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .lighthouse-grid .score-card {
+        width: 100%;
+        margin: .1rem 0;
+    }
+
+    .project-info {
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+
+    .info-card {
+        width: 100%;
+    }
+
+    .project-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-actions a {
+        width: 100%;
+    }
+}
