@@ -17,6 +17,15 @@
     overflow: hidden;
 }
 
+.portfolio-container>.project-item {
+    flex: 1 1 calc(50% - 22.5px);
+    min-width: 0;
+}
+
+.project-item>.project {
+    width: 100%;
+}
+
 .project {
     background-color: var(--card-bg);
     border: 2px solid var(--border-color);
@@ -165,6 +174,10 @@ ul.project-tags {
         gap: 20px;
         overflow: hidden;
         padding: 25px 0;
+    }
+
+    .portfolio-container>.project-item {
+        flex-basis: 90%;
     }
 
     .project {
