@@ -40,7 +40,7 @@
     color: var(--neon-green);
 }
 
-.project-lighthouse{
+.project-lighthouse {
     width: 100%;
 }
 
@@ -63,13 +63,13 @@
     margin: 1rem 0 5rem 0;
 }
 
-.lighthouse-grid .score-card h3{
+.lighthouse-grid .score-card h3 {
     font-size: 2.3rem;
     font-weight: 500;
     color: var(--neon-green);
 }
 
-.lighthouse-grid .score-card p{
+.lighthouse-grid .score-card p {
     font-size: 1.1rem;
 }
 
@@ -196,6 +196,24 @@ ul.project-layout-tags {
         margin-top: 8rem;
     }
 
+    .layout-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .layout-text p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .layout-text ul {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .layout-text li::marker {
+        font-size: 1rem;
+    }
+
     .project-layout-content {
         width: 100%;
     }
@@ -205,10 +223,30 @@ ul.project-layout-tags {
         position: static;
     }
 
+    .project-technologies {
+        padding: 1.3rem;
+    }
+
+    .project-technologies h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-layout-tags .tag span {
+        font-size: .9rem;
+    }
+
     .project-lighthouse .lighthouse-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+
+    .lighthouse-grid .score-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .lighthouse-grid .score-card p {
+        font-size: 1rem;
     }
 
     .lighthouse-grid .score-card {
@@ -217,8 +255,15 @@ ul.project-layout-tags {
     }
 
     .project-info {
-        /* flex-direction: column; */
         gap: 1rem;
+    }
+
+    .project-info .info-card h3 {
+        font-size: 1rem;
+    }
+
+    .project-info .info-card p {
+        font-size: .9rem;
     }
 
     .info-card {
@@ -232,5 +277,7 @@ ul.project-layout-tags {
 
     .project-actions a {
         width: 100%;
+        font-size: 1.2rem;
+        padding: 1rem;
     }
 }
